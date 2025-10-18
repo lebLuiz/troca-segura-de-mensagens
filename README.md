@@ -24,7 +24,7 @@ Este projeto implementa um sistema de mensagens seguras utilizando criptografia 
 ## Estrutura do Projeto
 ```
 trabalho-1/
-├── .nvmrc                          # Versão do Node.js (v20.20.0)
+├── .nvmrc                          # Versão do Node.js (v20.*)
 ├── package.json                    # Dependências e scripts do projeto
 ├── tsconfig.json                   # Configuração do TypeScript
 ├── README.md                       # Documentação do projeto
@@ -52,7 +52,7 @@ trabalho-1/
 ## Instalação e execução
 
 ### 1. Configurar a versão correta do Node.js
-Este projeto requer o Node.js **v20.20.0** (conforme especificado no arquivo `.nvmrc`).
+Este projeto requer o Node.js **v20.*** (conforme especificado no arquivo `.nvmrc`).
 
 #### 1.1 Instalar o NVM (Node Version Manager)
 O NVM permite gerenciar múltiplas versões do Node.js no mesmo sistema.
@@ -87,13 +87,13 @@ nvm --version
 #### 1.3 Instalar e usar a versão correta do Node.js
 ```bash
 # Instala a versão especificada no .nvmrc
-nvm install 20.20.0
+nvm install 20.*
 
 # Define essa versão como ativa
-nvm use v20.20.0
+nvm use v20.*
 
 # Verifica se está usando a versão correta
-node --version  # Deve exibir: v20.20.0
+node --version  # Deve exibir: v20.*
 ```
 
 ### 2.Instalar as dependências do projeto
