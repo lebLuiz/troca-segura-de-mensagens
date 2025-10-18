@@ -125,9 +125,9 @@ export class User {
 
     try {
       // 1. Valida o certificado do remetente
-      if (!ca.validateCertificate(securePackage.senderCertificate)) {
+      if (!ca.validateCertificate(securePackage.senderCertificate))
         throw new Error("❌ Certificado do remetente inválido!");
-      }
+
       console.log("✅ Certificado do remetente validado");
 
       // 2. Descriptografa a chave simétrica com chave privada do destinatário (RSA)
