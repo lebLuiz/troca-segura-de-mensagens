@@ -45,7 +45,6 @@ trabalho-1/
     └── types/                      # Definições de tipos TypeScript
         ├── Certificate.interface.ts      # Interface de certificado
         ├── MessageResult.interface.ts    # Interface de resultado de mensagem
-        ├── PropsFnScenario.interface.ts  # Props para funções de cenário
         └── SecurePackage.interface.ts    # Interface de pacote seguro
 ```
 

@@ -1,9 +1,17 @@
-import PropsFnScenario from "../types/PropsFnScenario.interface";
+import { CertificateAuthority } from "../classes/CertificateAuthority";
+import { User } from "../classes/User";
 
-export default function scenario1({ alice, bob, ca }: PropsFnScenario): void {
+export default function scenario1(): void {
   console.log("\n" + "#".repeat(70));
   console.log("🧭 CENÁRIO 1: Envio normal de mensagem");
   console.log("#".repeat(70));
+  console.log("\nCriando Autoridade Certificadora...");
+  const ca = new CertificateAuthority();
+
+  console.log("👧 Criando usuário Alice...");
+  const alice = new User("Alice", ca);
+  console.log("👦 Criando usuário Bob...");
+  const bob = new User("Bob", ca);
 
   const originalMessage = "Olá Bob! Esta é uma mensagem ultra secreta. 🔒";
   console.log(`💬 Mensagem original: "${originalMessage}"`);
