@@ -2,6 +2,7 @@ import scenario1 from "./functions/scenario1";
 import scenario2 from "./functions/scenario2";
 import scenario3 from "./functions/scenario3";
 import scenario4 from "./functions/scenario4";
+import scenario5 from "./functions/scenario5";
 
 function main(): void {
   console.log("#".repeat(70));
@@ -19,6 +20,9 @@ function main(): void {
 
   // ✅ Resposta de Bob para Alice
   scenario4();
+
+  // 🚨 Caminho com chave pública adulterada
+  scenario5();
 
   console.log("\n" + "#".repeat(70));
   console.log("✅ SIMULAÇÃO CONCLUÍDA");
