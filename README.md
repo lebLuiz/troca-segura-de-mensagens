@@ -41,6 +41,7 @@ trabalho-1/
     │   ├── scenario2.ts            # Cenário 2: Mensagem adulterada
     │   ├── scenario3.ts            # Cenário 3: Certificado inválido
     │   └── scenario4.ts            # Cenário 4: Resposta bidirecional
+    │   └── scenario5.ts            # Cenário 5: Adulterando chave pública
     │
     └── types/                      # Definições de tipos TypeScript
         ├── Certificate.interface.ts      # Interface de certificado
